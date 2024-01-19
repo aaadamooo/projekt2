@@ -1,0 +1,22 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <h2>The phone number must have 9 digits and no spaces.</h2>
+  <div class="Add-person">
+    <form action="/book", method="POST">
+      <label for="Name">Name:</label>
+      <input type="text" id="Name" name="Name" required>
+      <label for="Surname">Surname:</label>
+      <input type="text" id="Surname" name="Surname" required>
+      <label for="PhoneNumber">Phone number:</label>
+      <input type="text" id="PhoneNumber" name="PhoneNumber" required>
+      <button>Submit</button>
+    </form>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
